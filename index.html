@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>Wini OS</title>
+    <link rel="stylesheet" href="js/css/layui.css" media="all">
+    <link rel='Shortcut Icon' type='image/x-icon' href='./img/windows.ico'>
+    <link href="./css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="./component/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/zTreeStyle.css" type="text/css">
+    <link rel="stylesheet" href="css/scrollbars.css" type="text/css">
+    <link href="./css/default.css" rel="stylesheet">
+    <script type="text/javascript" src="./js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ztree.all.js"></script>
+    <script type="text/javascript" src="./component/layer-v3.0.3/layer/layer.js"></script>
+    <script type="text/javascript" src="./js/win10.js"></script>
+    <script type="text/javascript" src="js/layui.js"></script>
+    <style>
+        * {
+            font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu
+        }
+        /*磁贴自定义样式*/
+        
+        .win10-block-content-text {
+            line-height: 44px;
+            text-align: center;
+            font-size: 12px;
+        }
+        
+        body,
+        td,
+        th {
+            font-size: 9px;
+        }
+    </style>
+    <script>
+        //iframe跨域调用父级js方法
+        function OpenStation(stationID, stationName) {
+            Win10.openUrl('http://baidu.com?stationId=' + stationID, stationName, [
+                ['100%', '93%'],
+                ['0px', '0px']
+            ]);
+        }
+        Win10.onReady(function() {
+
+            if (!window.name) {
+
+                window.name = 'LSWEB';
+
+                Win10.setBgUrl({
+                    main: './img/wallpapers/index3Gos.png',
+                    mobile: './img/wallpapers/mobile.jpg',
+                });
+
+                Win10.setAnimated([
+                    'animated flip',
+                    'animated bounceIn',
+                ], 0.01)
+                Win10.fallScreen();
+                //loadData();
+
+            } else {
+
+                Win10.setBgUrl({
+                    main: './img/wallpapers/index3Gos.png',
+                    mobile: './img/wallpapers/mobile.jpg',
+                });
+
+                Win10.setAnimated([
+                        'animated flip',
+                        'animated bounceIn',
+                    ], 0.01)
+                    //Win10.fallScreen();
+                loadData();
+            }
+
+        });
+
+
+        //加载刷新时调用	
+        function loadData() {
+            var setting = {
+                view: {
+                    showLine: false
+                },
+                data: {
+                    simpleData: {
+                        enable: true,
+
+                    },
+
+                }
+            };
+
+            var zNodes = [{
+                name: "Parent Station",
+                icon: 'img/mark/Home.png',
+                open: true,
+
+                children: [{
+                    name: "Staiton One",
+                    icon: "img/mark/Station.png",
+                    children: [{
+                        name: "Staiton A",
+                        icon: "img/mark/Station.png",
+                    }, {
+                        name: "Staiton B",
+                        icon: "img/mark/Station.png",
+                    }, {
+                        name: "Staiton C",
+                        icon: "img/mark/Station.png",
+                    }, {
+                        name: "Staiton D",
+                        icon: "img/mark/Station.png",
+                    }]
+                }, {
+                    name: "Staiton Two",
+                    icon: "img/mark/Station.png",
+                    children: [{
+                        name: "Staiton A",
+                        icon: "img/mark/Station.png",
+                    }, {
+                        name: "Staiton B",
+                        icon: "img/mark/Station.png",
+                    }, {
+                        name: "Staiton C",
+                        icon: "img/mark/Station.png",
+                    }, {
+                        name: "Staiton D",
+                        icon: "img/mark/Station.png",
+                    }]
+                }, {
+                    name: "Staiton Three",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, ]
+            }];
+            $(document).ready(function() {
+                $.fn.zTree.init($("#treeDemo"), setting, zNodes);
+            });
+            setTimeout(function() {
+                layer.closeAll('loading');
+            }, 2000);
+
+
+        }
+
+
+        //加载刷新时调用	
+        function loadDataNoMsg() {
+            var setting = {
+                view: {
+                    showLine: false
+                },
+                data: {
+                    simpleData: {
+                        enable: true,
+
+                    },
+
+                }
+            };
+            var zNodes = [{
+                name: "Parent Station",
+                icon: '../img/mark/Home.png',
+                open: true,
+
+                children: [{
+                    name: "Staiton One",
+                    icon: "img/mark/Station.png",
+                    children: [{
+                        name: "Staiton A",
+                        icon: "img/mark/Station.png",
+                    }, {
+                        name: "Staiton B",
+                        icon: "img/mark/Station.png",
+                    }, {
+                        name: "Staiton C",
+                        icon: "img/mark/Station.png",
+                    }, {
+                        name: "Staiton D",
+                        icon: "img/mark/Station.png",
+                    }]
+                }, {
+                    name: "Staiton Two",
+                    icon: "img/mark/Station.png",
+                    children: [{
+                        name: "Staiton A",
+                        icon: "img/mark/Station.png",
+                    }, {
+                        name: "Staiton B",
+                        icon: "img/mark/Station.png",
+                    }, {
+                        name: "Staiton C",
+                        icon: "img/mark/Station.png",
+                    }, {
+                        name: "Staiton D",
+                        icon: "img/mark/Station.png",
+                    }]
+                }, {
+                    name: "Staiton Three",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, {
+                    name: "Staiton Others",
+                    icon: "img/mark/Station.png",
+                    isParent: true
+                }, ]
+            }];
+            $(document).ready(function() {
+                $.fn.zTree.init($("#treeDemo"), setting, zNodes);
+            });
+        }
+
+        //打开时重新计算 实现窗口最大化
+        $(document).ready(function() { //使用jquery的ready方法似的加载运行 
+            if (window.screen) { //判断浏览器是否支持window.screen判断浏览器是否支持screen 
+                var myw = screen.availWidth; //定义一个myw，接受到当前全屏的宽 
+                var myh = screen.availHeight; //定义一个myw，接受到当前全屏的高 
+                window.moveTo(0, 0); //把window放在左上脚 
+                window.resizeTo(myw, myh); //把当前窗体的长宽跳转为myw和myh 
+                //Win10.enableFullScreen();
+            }
+        });
+    </script>
+</head>
+
+<body onLoad="fresh();" style="background-image: url(img/wallpapers/index3Gos.png)">
+    <div id="win10">
+        <div class="desktop">
+            <div id="win10-shortcuts" class="shortcuts-hidden">
+            </div>
+            <div id="win10-desktop-scene">
+                <div id="leftFresh" class="test test-1" style="height:93%; width:20%;  margin:2%; margin-left:0;margin-right:0; margin-bottom:0; float:left;overflow:auto">
+                    <ul id="treeDemo" class="ztree"></ul>
+                </div>
+                <div style="height:100%; width:80%;float:left;">
+                    <iframe id="frame" frameborder="0" style="width:100%; height:100%" allowtransparency="true" scrolling="no">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div id="win10-menu" class="hidden">
+            <div class="list win10-menu-hidden animated animated-slideOutLeft">
+                <div class="item" onclick="Win10.exit()">
+                    <i class="black icon fa fa-power-off fa-fw"></i>
+                    <span class="title">Exit</span>
+                </div>
+                <div class="item" onclick="freshfaile();">
+                    <i class="black icon fa fa-wifi fa-fw"></i>
+                    <span class="title">Connection Test</span>
+                </div>
+            </div>
+
+            <div id="win10-menu-switcher"></div>
+        </div>
+        <div id="win10_command_center" class="hidden_right">
+            <div class="title">
+                <h1 style="float: left">Help Center </h1>
+                <span id="win10_btn_command_center_clean_all">hidden</span>
+            </div>
+            <div class="msgs">
+                <h2>一、Enter the full screen</h2>
+                <br> 1.Mouse mode, right click on the left side of the computer room to enter full screen.
+                <br> 2.In touch mode, the list director of the left machine room is selected to enter the full screen.
+                <br>
+            </div>
+        </div>
+        <div id="win10_task_bar">
+            <div id="win10_btn_group_left" class="btn_group">
+                <div id="win10_btn_win" class="btn">
+                    <span class="fa fa-chevron-circle-up"></span>
+                </div>
+                <div id="win10_btn_refresh" class="btn">
+                    <span class="fa fa-refresh" title="Refresh List"></span>
+                </div>
+            </div>
+            <div id="win10_btn_group_middle" class="btn_group"></div>
+            <div id="win10_btn_group_right" class="btn_group">
+                <div class="btn" id="win10_btn_command">
+                    <img id="win10-msg-nof" src="img/icon/Help.png">
+                    </span>
+                </div>
+                <div class="btn" id="win10_btn_time"></div>
+                <div class="btn" id="win10_btn_show_desktop"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

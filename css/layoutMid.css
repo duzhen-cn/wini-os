@@ -1,0 +1,272 @@
+html body {
+	margin: 0;
+	;overflow:auto;
+	font-size:12px
+}
+div.parent {
+	width:100%;
+	height:100%;
+	z-index: 0;
+	margin-bottom:20px;
+}
+div.left {
+	width:55%;
+	height:100%;
+	float:left;
+}
+div.airleft {
+	width:70%;
+	height:100%;
+	float:left;
+}
+div.leftchart {
+	width:100%;
+	height:70%;
+}
+div.InfoWindow {
+	width:200px;
+	height:100px;
+}
+div.lefttable {
+	width:100%;
+	height:30%;
+	overflow:auto;
+}
+div.right {
+	width:45%;
+	height:100%;
+	float:left;
+}
+div.airright {
+	width:30%;
+	height:97%;
+	float:left;
+}
+div.airrighttop {
+	width:100%;
+	height:40%;
+	padding-bottom:1%
+}
+div.airrightbot {
+	width:100%;
+	height:55%;
+	float:left;
+}
+div.StationA {
+	width:90%;
+	height:100%;
+	background:url(../img/Station-A_max.png) no-repeat ;
+	background-size:cover;
+}
+div.StationB {
+	width:90%;
+	height:100%;
+	background:url(../img/Station-B_max.png) no-repeat;
+	background-size:cover;
+}
+th.StationA_1 {
+	float:left;
+	margin:20px;
+	margin: 0
+}
+th.StationB_1 {
+	float:left;
+	margin:20px;
+	margin: 0
+}
+th.StationA_2 {
+	width:100%;
+	height:100%;
+	margin: 0
+}
+th.StationB_2 {
+	width:100%;
+	height:100%;
+	margin: 0
+}
+tr.table1 {
+	width:100%;
+	height:30%;
+	margin: 0
+}
+tr.table2 {
+	width:100%;
+	height:30%;
+	margin: 0
+}
+tr.table3 {
+	width:100%;
+	height:30%;
+	margin: 0
+}
+tr.table4 {
+	width:100%;
+	height:10%;
+	margin: 0
+}
+tr.table5 {
+	width:100%;
+	height:95%;
+	margin: 0;
+}
+tr.table6 {
+	width:100%;
+	height:5%;
+	margin: 0
+}
+tr.table7 {
+	width:100%;
+	height:33%;
+	margin: 0
+}
+td.table1 {
+	width:20%;
+	height:33%;
+	margin: 0;
+	font-size:18px;
+	font-weight:600;
+	color:#FFF;
+}
+td.table2 {
+	width:30%;
+	height:33%;
+	margin: 0;
+	font-size:10px;
+	color:#FFF;
+	text-align:center
+}
+td.table3 {
+	width:25%;
+	height:33%;
+	margin: 0;
+}
+td.table4 {
+	width:25%;
+	height:33%;
+	margin: 0;
+	margin-bottom:0;
+}
+td.table2 {
+	width:30%;
+	height:33%;
+	margin: 0
+}
+td.table7 {
+	width:50%;
+	height:100%;
+	margin: 0
+}
+table7 {
+	width:100%;
+	height:20%;
+	margin: 0
+}
+td.right {
+	float:right
+}
+table.tips {
+	font-size:18px;
+	color:#FFFFFF;
+	padding:10px
+}
+table.StationA {
+	width:100%;
+	height:100%;
+	margin: 0 ;
+	font-size:14px;
+}
+table.airStationAbot {
+	width:100%;
+	height:50%;
+	margin: 0 ;
+	font-size:14px;
+}
+table.airStationA {
+	width:100%;
+	height:50%;
+	margin: 0 ;
+	font-size:14px;
+}
+table.StationA_table {
+	width:90%;
+	height:90%;
+	margin:5%;
+	font-size:5px;
+	margin: 0 ;
+	font-size:12px
+}
+table.StationB {
+	width:100%;
+	height:100%;
+	margin: 0 ;
+	font-size:12px
+}
+.StationMonitor {
+	width:90%;
+	border-collapse:collapse;
+	border-spacing:0;
+	margin-left:5%;
+	margin-top:20px;
+	overflow:auto ;
+	background-color:#CCC
+}
+.StationMonitor tr {
+	height:10px
+}
+a.tips {
+	font-size:18px;
+	color:#FFFFFF;
+}
+button.hide-btn {
+	visibility:hidden
+}
+.bg-blur {
+	-webkit-filter:blur(9px);
+	-moz-filter:blur(9px);
+	-o-filter:blur(9px);
+	-ms-filter:blur(9px);
+	filter:blur(9px);
+}
+.win10-context-menu {
+	left: 0;
+	top: 0;
+	position: fixed;
+	width: 150px;
+	height: auto;
+	background-color: rgb(255, 255, 255);
+	border: #CCC 1px solid;
+	display: block;
+	border-radius: 5px;
+	z-index: 99999999;
+}
+.win10-context-menu ul {
+	margin: 0px;
+	padding: 0px;
+}
+.win10-context-menu ul li {
+	transition: background-color 0.5s;
+	cursor: default;
+	padding: 0px 1em;
+	list-style: none;
+	line-height: 30px;
+	height: 30px;
+	margin: 3px 0;
+	font-size: 13px;
+}
+.win10-context-menu ul li:hover {
+	background-color: #DDD;
+}
+.win10-context-menu ul li a {
+	text-decoration: none;
+	display: block;
+	height: 100%;
+	color: #333;
+	outline: none;
+}
+.win10-context-menu ul hr {
+	margin: 0;
+	height: 0px;
+	border: 0px;
+	border-bottom: rgb(233,233,233) 1px solid;
+	border-top: none
+}

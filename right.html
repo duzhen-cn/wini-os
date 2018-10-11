@@ -1,0 +1,330 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+    <title>LoopBack List</title>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="This is my page">
+    <link href="css/layout.css" rel="stylesheet" type="text/css" media="screen and (max-width: 1024px)">
+    <link href="css/layoutMid.css" rel="stylesheet" type="text/css" media="screen and (min-width: 1025px)">
+    <link rel="stylesheet" href="./component/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="js/css/layui.css">
+    <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="./component/layer-v3.0.3/layer/layer.js"></script>
+    <script type="text/javascript" src="js/echarts.js"></script>
+    <script type="text/javascript" src="js/layui.js"></script>
+</head>
+
+<body style="background:transparent;">
+    <div id="stationDivA" style="display:none" class="parent layui-anim layui-anim-fadein">
+        <div style="height:50%; width:100%;">
+            <fieldset class="layui-elem-field" style="height:90%; width:98%; margin-left:1%; margin-right:1%;">
+                <legend align="center">
+                    <a id="StationNameA" style="color:#FFF; font-weight:700">&#12288;</a>
+                </legend>
+                <div class="layui-field-box" style="height:85%; width:98%;">
+                    <table class="StationA" border="0">
+                        <tr>
+                            <td class="table7">
+                                <table class="StationA" border="0">
+                                    <tr>
+                                        <td class="table1" align="center">
+                                            Mode 1
+                                        </td>
+                                        <td class="table2">
+                                            Alarm Status:
+                                            <button id="UPSAlarmA" class="layui-btn layui-btn-xs layui-btn-warm">Unknow</button>
+                                        </td>
+                                        <td class="table3">
+                                            <div id="mainT1" style="width:100%;height:100%;">
+                                            </div>
+                                        </td>
+                                        <td class="table3">
+                                            <div id="mainT2" style="width:100%;height:100%;">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table1" align="center">
+                                            Mode 2
+                                        </td>
+                                        <td class="table2">
+                                            <table class="StationA" border="0">
+                                                <tr>
+                                                    <td class="table2">
+                                                        Open Status:
+                                                        <button id="AirOpenA" class="layui-btn layui-btn-xs layui-btn-warm">Unknow</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table2">
+                                                        Work Stauts:
+                                                        <button id="AirRunA" class="layui-btn layui-btn-xs layui-btn-warm">Unknow</button>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                            </td>
+                            <td class="table3">
+                                <div id="mainT3" style="width:100%;height:100%;">
+                                </div>
+                            </td>
+                            <td class="table3">
+                                <div id="mainT4" style="width:100%;height:100%;">
+                                </div>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td class="table1" align="center">
+                                    Mode 3
+                                </td>
+                                <td class="table2">
+                                    Alarm Status:
+                                    <button id="PowerAlarmA" class="layui-btn layui-btn-xs layui-btn-warm">Unknow</button>
+                                </td>
+                                <td class="table3">
+                                    <div id="mainT5" style="width:100%;height:100%;">
+                                    </div>
+                                </td>
+                                <td class="table3">
+                                    <!--div id="mainT6" style="width:100%;height:100%;"></div-->
+                                </td>
+                            </tr>
+                            </table>
+                            </td>
+                            <td class="table7">
+                                <table class="StationA" border="0">
+                                    <tr>
+                                        <td class="table1" align="center">
+                                            Mode 4
+                                        </td>
+                                        <td class="table2">
+                                            <table class="StationA" border="0">
+                                                <tr>
+                                                    <td class="table2">
+                                                        Alarm Status:
+                                                        <button id="DoorAlarmA" class="layui-btn layui-btn-xs layui-btn-warm">Unknow</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table2">
+                                                        Work Stauts:
+                                                        <button id="DoorStatusA" class="layui-btn layui-btn-xs layui-btn-warm">Unknow</button>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td class="table3">
+                                        </td>
+                                        <td class="table3">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table1" align="center">
+                                            Mode 5
+                                        </td>
+                                        <td class="table2">
+                                            Alarm Status:
+                                            <button id="BattryAlarmA" class="layui-btn layui-btn-xs layui-btn-warm">Unknow</button>
+                                        </td>
+                                        <td class="table3">
+                                            <div id="mainT7" style="width:100%;height:100%;">
+                                            </div>
+                                        </td>
+                                        <td class="table3">
+                                            <div id="mainT8" style="width:100%;height:100%;">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table1" align="center">
+                                            Mode 6
+                                        </td>
+                                        <td class="table2">
+                                            <table class="StationA" border="0">
+                                                <tr>
+                                                    <td class="table2">
+                                                        Alarm Status:
+                                                        <button id="DieseOpenA" class="layui-btn layui-btn-xs layui-btn-warm">Unknow</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table2">
+                                                        Work Stauts:
+                                                        <button id="DieseRunA" class="layui-btn layui-btn-xs layui-btn-warm">Unknow</button>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td class="table3">
+                                        </td>
+                                        <td class="table4">
+                                            <button class="layui-btn layui-btn-radius layui-btn-normal layui-btn-sm" onclick="DetailA()">View Detail</button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </fieldset>
+        </div>
+        <div id="stationDivB" style="display:none" class="layui-anim layui-anim-fadein">
+            <div style="height:50%; width:100%;">
+                <fieldset class="layui-elem-field" style="height:90%; width:98%; margin-left:1%; margin-right:1%">
+                    <legend align="center">
+                        <a id="StationNameB" style="color:#FFF; font-weight:700">&#12288;</a>
+                    </legend>
+                    <div class="layui-field-box" style="height:85%; width:98%;">
+                        <table class="StationA" border="0">
+                            <tr>
+                                <td class="table7">
+                                    <table class="StationA" border="0">
+                                        <tr>
+                                            <td class="table1" align="center">
+                                                Mode 1
+                                            </td>
+                                            <td class="table2">
+                                                Alarm Status:
+                                                <button id="UPSAlarmB" class="layui-btn layui-btn-xs layui-btn-warm">Unknow</button>
+                                            </td>
+                                            <td class="table3">
+                                                <div id="mainG1" style="width:100%;height:100%;">
+                                                </div>
+                                            </td>
+                                            <td class="table3">
+                                                <div id="mainG2" style="width:100%;height:100%;">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table1" align="center">
+                                                Mode 2
+                                            </td>
+                                            <td class="table2">
+                                                <table class="StationA" border="0">
+                                                    <tr>
+                                                        <td class="table2">
+                                                            Alarm Status:
+                                                            <button id="AirOpenB" class="layui-btn layui-btn-xs layui-btn-warm">Unknow</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table2">
+                                                            Work Stauts:
+                                                            <button id="AirRunB" class="layui-btn layui-btn-xs layui-btn-warm">Unknow</button>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                </td>
+                                <td class="table3">
+                                    <div id="mainG3" style="width:100%;height:100%;">
+                                    </div>
+                                </td>
+                                <td class="table3">
+                                    <div id="mainG4" style="width:100%;height:100%;">
+                                    </div>
+                                </td>
+                                </tr>
+                                <tr>
+                                    <td class="table1" align="center">
+                                        Mode 3
+                                    </td>
+                                    <td class="table2">
+                                        Alarm Status:
+                                        <button id="PowerAlarmb" class="layui-btn layui-btn-xs layui-btn-warm">Unknow</button>
+                                    </td>
+                                    <td class="table3">
+                                        <div id="mainG5" style="width:100%;height:100%;">
+                                        </div>
+                                    </td>
+                                    <td class="table3">
+                                        <!--div id="mainG6" style="width:100%;height:100%;"></div-->
+                                    </td>
+                                </tr>
+                                </table>
+                                </td>
+                                <td class="table7">
+                                    <table class="StationA" border="0">
+                                        <tr>
+                                            <td class="table1" align="center">
+                                                Mode 4
+                                            </td>
+                                            <td class="table2">
+                                                <table class="StationA" border="0">
+                                                    <tr>
+                                                        <td class="table2">
+                                                            Alarm Status:
+                                                            <button id="DoorAlarmB" class="layui-btn layui-btn-xs layui-btn-warm">Unknow</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table2">
+                                                            Work Stauts:
+                                                            <button id="DoorStatusB" class="layui-btn layui-btn-xs layui-btn-warm">Unknow</button>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td class="table3">
+                                            </td>
+                                            <td class="table3">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table1" align="center">
+                                                Mode 5
+                                            </td>
+                                            <td class="table2">
+                                                Alarm Status:
+                                                <button id="BattryAlarmB" class="layui-btn layui-btn-xs layui-btn-warm">Unknow</button>
+                                            </td>
+                                            <td class="table3">
+                                                <div id="mainG7" style="width:100%;height:100%;">
+                                                </div>
+                                            </td>
+                                            <td class="table3">
+                                                <div id="mainG8" style="width:100%;height:100%;">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table1" align="center">
+                                                Mode 6
+                                            </td>
+                                            <td class="table2">
+                                                <table class="StationA" border="0">
+                                                    <tr>
+                                                        <td class="table2">
+                                                            Alarm Status:
+                                                            <button id="DieseOpenB" class="layui-btn layui-btn-xs layui-btn-warm">Unknow</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table2">
+                                                            Work Stauts:
+                                                            <button id="DieseRunB" class="layui-btn layui-btn-xs layui-btn-warm">Unknow</button>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td class="table3">
+                                            </td>
+                                            <td class="table4">
+                                                <button class="layui-btn layui-btn-radius layui-btn-normal layui-btn-sm" onclick="DetailB()">View Detail</button>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+</body>
+<script type="text/javascript" src="js/loopback.js"></script>
