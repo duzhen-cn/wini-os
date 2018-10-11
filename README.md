@@ -1,6 +1,7 @@
 # wini-os
 ### Simple industrial data display<br>
 ![Image text](https://github.com/duzhen-cn/wini-os/blob/master/img/QQ%E6%88%AA%E5%9B%BE20181011143040.jpg)
+![Image text](https://github.com/duzhen-cn/wini-os/blob/master/img/QQ%E6%88%AA%E5%9B%BE20181011143446.jpg)
 
 ### [wini-ui demo](http://nicezz.com/QuickCode/demo/index.html)<br>
 
