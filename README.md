@@ -1,5 +1,6 @@
 # wini-os
 ### Simple industrial data display<br>
+### [wini-ui demo](http://nicezz.com/QuickCode/demo/index.html)<br>
 
 * 1.Welcome to Wini OS developer mode.<br>
 * 2.Author：Thomas email:hzdz163@163.com<br>
